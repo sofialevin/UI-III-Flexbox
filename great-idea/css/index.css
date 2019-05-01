@@ -109,6 +109,9 @@ h2 {
 
 .innovation {
 	width: 50%;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .double {
@@ -117,6 +120,7 @@ h2 {
 
 .triple {
 	margin: 40px 0 40px 0;
+	max-width: 33%;
 }
 
 section .innovation button {
@@ -126,8 +130,6 @@ section .innovation button {
     background-color: white;
     border-color: black;
 	padding: 1px 30px;
-	margin: auto;
-	display: block;
 	cursor: pointer;
 }
 
