@@ -70,18 +70,19 @@ h1, h2, h3, h4, h5 {
 	margin: auto;
 }
 
-.container header nav {
-	display: inline-block;
-	vertical-align: top;
-	margin: 30px 0 30px 0;
+.container header {
+	display: flex;
+	padding-top: 20px;
 }
 
-.container header nav a:first-child {
-	margin-left: 76px;
+.container header nav {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
 }
 
 .container header nav a {
-	margin: 0 30px;
 	color: silver;
 	text-decoration: none;
 	font-size: 15px;
@@ -93,10 +94,8 @@ main {
 }
 
 .logo {
-	margin-right: 0;
-	margin-left: 60px;
-	margin-top: 20px;
 	padding-right: 76px;
+	padding-left: 20px;
 }
 
 h1 {
@@ -105,25 +104,14 @@ h1 {
 }
 
 .innovation {
-	display: inline-block;
 	width: 50%;
-	vertical-align: top;
-	margin-top: 55px;
-}
-
-section img {
-	display: inline-block;
 }
 
 .double {
-	max-width: 49%;
-	display: inline-block;
 	margin: 40px 0 40px 0;
 }
 
 .triple {
-	width: 33%;
-	display: inline-block;
 	margin: 40px 0 40px 0;
 }
 
@@ -140,16 +128,20 @@ button {
 }
 
 .first-section {
-	padding-top: 128px;
+	padding-top: 80px;
 	padding-bottom: 70px;
+	display: flex;
+	align-items: center;
 }
 
 .upper-section {
 	border-top: 1.5px solid grey;
+	display: flex;
 }
 
 .bottom-section {
 	border-bottom: 1.5px solid grey;
+	display: flex;
 }
 
 footer {
