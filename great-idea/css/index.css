@@ -149,12 +149,12 @@ section .innovation button {
 }
 
 footer {
-	margin: 40px 76px 0 76px;
+	margin: 95px 0 100px 0;
 }
+
 footer p {
 	text-align: center;
-	font-size: 13px;
-	padding: 55px 0 100px 0;
+	font-size: 16px;
 }
 
 .first-section img {
