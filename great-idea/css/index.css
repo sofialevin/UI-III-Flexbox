@@ -29,7 +29,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 1.2;
 }
 ol, ul {
 	list-style: none;
@@ -66,25 +66,27 @@ h1, h2, h3, h4, h5 {
 /* Your code starts here! */
 
 .container {
-	width: 1030px;
+	width: 878px;
 	margin: auto;
 }
 
-.container header nav {
-	display: inline-block;
-	vertical-align: top;
-	margin: 30px 0 30px 0;
+.container header {
+	display: flex;
+	padding-top: 29px;
+	justify-content: space-between;
 }
 
-.container header nav a:first-child {
-	margin-left: 76px;
+.container header nav {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .container header nav a {
-	margin: 0 30px;
 	color: silver;
 	text-decoration: none;
-	font-size: 15px;
+	font-size: 16px;
 }
 
 main {
@@ -93,10 +95,7 @@ main {
 }
 
 .logo {
-	margin-right: 0;
-	margin-left: 60px;
-	margin-top: 20px;
-	padding-right: 76px;
+	padding-left: 89px;
 }
 
 h1 {
@@ -104,63 +103,118 @@ h1 {
 	text-align: center;
 }
 
-.innovation {
-	display: inline-block;
-	width: 50%;
-	vertical-align: top;
-	margin-top: 55px;
+h2 {
+	font-size: 25px;
 }
 
-section img {
-	display: inline-block;
+.innovation {
+	width: 50%;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .double {
-	max-width: 49%;
-	display: inline-block;
 	margin: 40px 0 40px 0;
 }
 
 .triple {
-	width: 33%;
-	display: inline-block;
 	margin: 40px 0 40px 0;
+	max-width: 33%;
 }
 
-button {
+section .innovation button {
 	font-family: 'Titillium Web', sans-serif;
 	font-size: 17px;
     letter-spacing: 1px;
     background-color: white;
     border-color: black;
 	padding: 1px 30px;
-	margin: auto;
-	display: block;
 	cursor: pointer;
 }
 
 .first-section {
-	padding-top: 128px;
+	padding-top: 80px;
 	padding-bottom: 70px;
+	display: flex;
+	align-items: center;
 }
 
 .upper-section {
 	border-top: 1.5px solid grey;
+	display: flex;
 }
 
 .bottom-section {
 	border-bottom: 1.5px solid grey;
+	display: flex;
 }
 
 footer {
-	margin: 40px 76px 0 76px;
+	margin: 95px 0 100px 0;
 }
+
 footer p {
 	text-align: center;
-	font-size: 13px;
-	padding: 55px 0 100px 0;
+	font-size: 16px;
 }
 
 .first-section img {
 	margin-left: 56px;
 }
+
+.services-list {
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	border-top: 1.5px solid grey;
+	border-bottom: 1.5px solid grey;
+	justify-content: space-between;
+	margin: 40px 0 40px 0;
+}
+
+.services-list section {
+	width: 48%;
+	padding: 20px;
+	background: #f4f3f4;
+	border: 1.5px solid #3e3e3e;
+	margin-bottom: 40px;
+}
+
+.services-list section:nth-child(-n+2) {
+	margin-top: 40px;
+}
+
+.services-header-img {
+	padding: 18px 0 27px 0;
+}
+
+.services-facts {
+	display: flex;
+}
+
+.services-facts div {
+	padding-right: 40px;
+}
+
+ul {
+	list-style-type: square;
+	list-style-position: inside;
+	padding-top: 20px;
+  }
+
+  ul li {
+	  line-height: 2;
+  }
+
+  .services-list section button {
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 10px;
+    letter-spacing: 1px;
+    background-color: white;
+	border-color: #3e3e3e;
+	border-radius: 5px;
+	padding: 8px 40px;
+	cursor: pointer;
+	margin-top: 26px;
+  }
